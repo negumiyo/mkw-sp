@@ -1,6 +1,14 @@
 name: Build MKW-SP
 
-on: workflow_dispatch
+on:
+  push:
+    paths-ignore:
+      - 'www/**'
+
+  pull_request:
+    paths-ignore:
+      - 'www/**'
+
 
 jobs:
   build:
