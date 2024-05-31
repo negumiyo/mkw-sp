@@ -1,20 +1,6 @@
 name: Build MKW-SP
 
-on:
-  push:
-    paths-ignore:
-      - 'www/**'
-      - 'tools/**'
-      - '.github/workflows/run_tidy.yml'
-      - '.github/workflows/clean_bmg.yml'
-      - '.github/workflows/build_tools.yml'
-  pull_request:
-    paths-ignore:
-      - 'www/**'
-      - 'tools/**'
-      - '.github/workflows/run_tidy.yml'
-      - '.github/workflows/clean_bmg.yml'
-      - '.github/workflows/build_tools.yml'
+on: workflow_dispatch
 
 jobs:
   build:
